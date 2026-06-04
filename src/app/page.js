@@ -11,7 +11,9 @@ import OpeningHoursSection from "@/components/OpeningHoursSection";
 import Image from "next/image";
 
 export default async function Home() {
-   const res = await fetch("http://localhost:5000/fast-food", {
+
+  // const res = await fetch("http://localhost:5000/fast-food"
+   const res = await fetch("https://fast-food-website-server.vercel.app/fast-food", {
     cache: "no-store",
   });
   const fastFoodData = await res.json();
