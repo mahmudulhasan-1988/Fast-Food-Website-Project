@@ -54,7 +54,7 @@ import AllFoodCard from "@/components/AllFoodCard";
 import HomeFoodCard from "@/components/HomeFoodCard";
 
 const FastFoodCard = async () => {
-  const res = await fetch("http://localhost:5000/fastFood", {
+  const res = await fetch("https://fast-food-website-server.vercel.app/fast-food", {
     cache: "no-store",
   });
   const fastFoodData = await res.json();
